@@ -7,23 +7,23 @@
 html, body {
     width: 100%;
     height: 100%;
+    background: linear-gradient(to bottom, #4801ff, #0e14b6);
 }
 
 .main {
     height: 100%;
     width: 100%;
-    background-color: white;
 }
 
 .circle {
-    position: absolute;
+    position: fixed;
     left: -60vh;
     top: 50%;
     transform: translate(0%, -50%) rotate(100deg);
     height: 150vh;
     width: 150vh;
     border-radius: 50%;
-    border: 2px solid #dadada;
+    border: 20px solid white;
 }
 
 
@@ -68,35 +68,45 @@ html, body {
 .smcircle{
 
     position: absolute;
-    right: -0.25vw;
-    top: 50%;
+    right: 0px ;
+    top: 47%;
     transform: translate(0%, -50%);
-    height: 0.5vw;
-    width: 0.5vw;
+    height: 0.7vw;
+    width: 0.7vw;
     border-radius: 50%;
-    background-color:  #777;
+    background-color:  white;
 
 }
 
 .sec {
     display: flex;
-    align-items: center; 
+    flex-direction: row;
+    justify-content: space-between; 
     padding-left: 30px;
     height: 100%;
     width: 50%;
 }
 
 .space{
-    width: 250px;
-    height: 55px;
+    width: 100px;
+    
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Roboto Mono", monospace;
+    font-family: "Druk Wide Web Bold Regular";
+    color: white;
 }
 
+.hollow-text {
+    
+    -webkit-text-fill-color: transparent; 
+    -webkit-text-stroke: 1px white;
+    
+    
+  }
+
 .sec h4{
-    font-size: 3.5vw;
+    font-size: 3vw;
     font-weight: bolder;
 }
 
@@ -120,13 +130,92 @@ h1, h2, h3, h4, h5, h6 {
     
 }
 
-.mncircle{
-    
-    
-    
+
+.text-bold{
+    display: flex;
+    justify-content: end;
+    transform: rotateY(-45deg) translateZ(0) scale(1);
+    transform-origin: right center;
+    transform-style: preserve-3d;
+    will-change: transform;
+}
+
+.text-bold h1{
+    color: black;
+    font-size: 120px;
+}
+
+.mncircle{   
     opacity: 0.1;
     height: 1vw;
     width: 1vw;
     border-radius: 50%;
-    background-color:  black;
+    background-color:  white;
 }
+
+.logo-name{
+    font-size: 15px;
+    font-weight: 900;
+    font-family: "Druk Wide Web Bold Regular";
+    color: white;
+  }
+
+.logo-top{
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 60px ;
+    color: white;
+}
+
+.logo-bottom{
+    position: absolute;
+    margin-top: 550px;
+    margin-left: 60px ;
+}
+
+.logo-bottom h1{
+    font-size: 40px;
+}
+.logo-bottom h2{
+    font-size: 35px;
+}
+.logo-bottom h3{
+    font-size: 30px;
+}
+
+.light{
+    opacity: 0.3;
+}
+
+.top-right{
+
+    position: absolute;
+    right: 60px;
+    top:50px;
+    height: 10%;
+    width: 15%;
+
+}
+
+.social-icons {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+  }
+  
+  .social-icons li {
+    margin-bottom: 10px; /* Adjust spacing between icons */
+  }
+  
+  .social-icon {
+    color: white;
+    font-size: 20px;
+    transition: font-size 0.3s; 
+  }
+  
+  .social-icon:hover {
+    font-size: 30px ; 
+  }
+
